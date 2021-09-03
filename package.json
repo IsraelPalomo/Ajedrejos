@@ -1,0 +1,32 @@
+{
+	"name": "ajedrejos",
+	"version": "1.0.0",
+	"description": "Empty project.",
+	"main": "index.js",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"scripts": {
+		"clean": "rm dist/bundle.js",
+		"build-dev": "webpack --mode=development",
+		"build-prod": "webpack --mode production",
+		"start": "webpack serve --open",
+		"build": "webpack"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"css-loader": "^6.2.0",
+		"file-loader": "^6.2.0",
+		"html-loader": "^2.1.2",
+		"html-webpack-plugin": "^4.5.2",
+		"mini-css-extract-plugin": "^2.2.2",
+		"node-sass": "^6.0.1",
+		"sass": "^1.39.0",
+		"sass-loader": "^12.1.0",
+		"style-loader": "^3.2.1",
+		"url-loader": "^4.1.1",
+		"webpack": "^5.51.2",
+		"webpack-cli": "^4.8.0",
+		"webpack-dev-server": "^4.1.0"
+	}
+}
