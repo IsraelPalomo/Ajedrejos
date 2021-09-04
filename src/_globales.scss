@@ -1,0 +1,33 @@
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+	/*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+   para probar la diferencia con y sin scroll suavizado*/
+}
+
+h1 {
+	font-size: $h1;
+}
+h2 {
+	font-size: $h2;
+}
+h3 {
+	font-size: $h3;
+}
+h4 {
+	font-size: $h4;
+}
+h5 {
+	font-size: $h5;
+}
+h6 {
+	font-size: $h6;
+}
+p {
+	font-size: $p;
+}
