@@ -1,6 +1,7 @@
 import "./styles.css";
 import "./styles.scss";
-import imgSRC from "./static/dama__blanca.png";
+AOS.init();
+import imgSRC from "./static/logotipo.png";
 const myFullpage = new fullpage("#Myfullpage", {
 	autoScrolling: true,
 	fitToSection: true,
@@ -17,6 +18,6 @@ const myFullpage = new fullpage("#Myfullpage", {
 	showActiveTooltip: true,
 });
 
-let IMG = document.getElementById("img1");
+let imgInicio = document.getElementById("img1Inicio");
 
-IMG.src = imgSRC;
+imgInicio.src = imgSRC;
