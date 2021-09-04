@@ -1,4 +1,4 @@
-# ajedrejos
+# Ajedrejos
 
 Empty project.
 
