@@ -9,6 +9,7 @@ const config = {
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "bundle.js",
+		assetModuleFilename: "static/[hash][ext][query]",
 	},
 	module: {
 		rules: [
@@ -22,17 +23,11 @@ const config = {
 			},
 
 			{
-				test: /\.(jpg|png|gif|jpeg|svg|xcf)$/,
-				use: [
-					{
-						loader: "file-loader",
-						options: {
-							name: "[name].[ext]",
-							outputPath: "static/",
-							useRelativePath: true,
-						},
-					},
-				],
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: "asset/resource",
+				generator: {
+					filename: "static/[hash][ext][query]",
+				},
 			},
 		],
 	},
