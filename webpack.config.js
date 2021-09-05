@@ -23,7 +23,7 @@ const config = {
 			},
 
 			{
-				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
 				type: "asset/resource",
 				generator: {
 					filename: "static/[hash][ext][query]",

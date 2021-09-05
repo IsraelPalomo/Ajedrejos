@@ -6,6 +6,7 @@ import imgSRC2 from "./static/logotipo__pieza.png";
 import imgSRC3 from "./static/fuensalida.png";
 import imgSRC4 from "./static/villafranca.jpg";
 import imgSRC5 from "./static/madridejos.jpg";
+
 const myFullpage = new fullpage("#Myfullpage", {
 	autoScrolling: true,
 	fitToSection: true,
@@ -26,6 +27,7 @@ const myFullpage = new fullpage("#Myfullpage", {
 
 let imgInicio = document.getElementById("img1Inicio");
 let imgLogo = document.getElementById("img__logo");
+
 let imgSlide1 = document.querySelector(".slide1");
 let imgSlide2 = document.querySelector(".slide2");
 let imgSlide3 = document.querySelector(".slide3");
