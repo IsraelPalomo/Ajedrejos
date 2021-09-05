@@ -1,12 +1,18 @@
 .section1 {
 	background-image: url("../src/static/fondoChess.jpg");
+	background-size: cover;
+	background-position: center center;
+
 	.fp-tableCell {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
 		gap: 8rem;
-		margin-top: 6rem;
+		.event {
+			margin-top: 10rem;
+		}
+
 		h4 {
 			padding: 1rem 3rem;
 			border-radius: 25px;
@@ -20,11 +26,6 @@
 		}
 	}
 	.seccion1__imgDama {
-		transform: rotate(-1deg);
-		margin-left: -15rem;
-		height: 35rem;
-		width: 40rem;
-		margin-top: 5rem;
 		display: none;
 	}
 }
@@ -36,13 +37,15 @@
 }
 #fp-nav ul li a span {
 	background-color: $color-ternario;
+	display: none;
 }
 #fp-nav ul li .fp-tooltip {
 	color: $color-ternario;
+	display: none;
 }
 .menu {
 	padding: 0;
-	margin: 2rem auto 0 auto;
+	margin: 0 auto;
 }
 .nav {
 	box-sizing: border-box;
@@ -64,6 +67,7 @@
 
 	li {
 		display: inline-block;
+		margin-top: 1rem;
 		a {
 			font-size: 1rem;
 			display: inline-block;
@@ -88,6 +92,14 @@
 @media (min-width: 450px) {
 }
 @media (min-width: 650px) {
+	#fp-nav ul li a span {
+		background-color: $color-ternario;
+		display: block;
+	}
+	#fp-nav ul li .fp-tooltip {
+		color: $color-ternario;
+		display: block;
+	}
 }
 @media (min-width: 900px) {
 	.section1 {
@@ -97,15 +109,11 @@
 				padding: 1rem 6rem;
 			}
 		}
-		.seccion1__imgDama {
-			display: block;
-			height: 30rem;
-			width: 35rem;
-			margin-left: -5rem;
-		}
 	}
 	.nav {
 		display: flex;
+		align-items: center;
+
 		.logotipo {
 			display: block;
 			margin: 0;
